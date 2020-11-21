@@ -53,7 +53,7 @@ namespace Shop
                 };
             });
 
-            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("tbShop"));
+            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Shop"));
             //services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
 
             services.AddSwaggerGen(c =>
